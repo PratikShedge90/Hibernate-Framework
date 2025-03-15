@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.tca.beans.Student" table="student">
+      <id name="rno"           column="rno"/>
+      <property name="name"    column="name"/>
+      <property name="per"     column="per"/>
+    </class>
+    
+    <class name="com.tca.beans.Teacher" table="teacher">
+    <id name="trno"           column="trno"/>
+    <property name="tname"   column="tname"/>
+    <property name="tsalary" column="tsalary"/>
+    
+    </class>
+
+
+</hibernate-mapping>

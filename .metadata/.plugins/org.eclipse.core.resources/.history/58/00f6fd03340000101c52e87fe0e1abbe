@@ -1,0 +1,49 @@
+package com.tca;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.tca.entities.Student;
+
+public class App {
+    public static void main(String[] args) 
+    {
+    	Configuration configuration = null;
+        SessionFactory sf = null;
+        Session session = null;
+        Transaction txn = null;
+        
+        try
+        {
+        	configuration = new Configuration();
+        	configuration.configure();
+        	
+        	sf = configuration.buildSessionFactory();
+        	session = sf.openSession();
+        	
+        	Student ob = new Student();
+        	ob.setRno(101);
+        	ob.setName("Saurav");
+        	ob.setPer(90.55);
+        	
+        	session.save(ob);
+        	
+        	txn.commit();
+        		
+        	System.out.println(" SuccesFully !!!");
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        	txn.rollback();
+        }
+        finally
+        {
+        	session.close();
+        	sf.close();
+        }
+
+    }
+}

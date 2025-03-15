@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;ASS-09&apos; to &apos;ASS-09-GET-LOAD&apos;&#x0A;- Original element: &apos;ASS-09&apos;&#x0A;- Renamed element: &apos;ASS-09&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;ASS-09&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=ASS-09" name="ASS-09-GET-LOAD" references="true" stamp="1741864923442" version="1.0"/>
+</session>

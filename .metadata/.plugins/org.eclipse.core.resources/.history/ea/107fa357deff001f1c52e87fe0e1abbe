@@ -1,0 +1,49 @@
+package com.tca;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.tca.entities.Student;
+
+public class App {
+    public static void main(String[] args) 
+    {
+    	Configuration configuration = null;
+        SessionFactory sf = null;
+        Session session = null;
+        Transaction txn = null;
+        
+        try
+        {
+        	configuration = new Configuration();
+        	configuration.configure("mysql.cfg.xml");
+        	
+        	sf = configuration.buildSessionFactory();
+        	session = sf.openSession();
+        	txn = session.beginTransaction();
+         	
+        	Student ob = new Student();
+        	ob.setRno(102);
+        	ob.setName("BBB");
+        	ob.setPer(90.0);
+        	
+        	session.persist(ob);
+        	txn.commit();
+        	
+        	System.out.println("Data is Saved SuccesFully !!!");
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        	txn.rollback();
+        }
+        finally
+        {
+        	session.close();
+        	sf.close();
+        }
+
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ASS-08-Save-Persist/src/main/resources/hibernate.cfg.xml&apos; to &apos;mysql.cfg.xml&apos;" description="Rename resource &apos;hibernate.cfg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/hibernate.cfg.xml" name="mysql.cfg.xml" stamp="1741838161570" updateReferences="true"/>
+</session>
