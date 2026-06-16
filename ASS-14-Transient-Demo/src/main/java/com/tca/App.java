@@ -27,16 +27,15 @@ public class App {
 			txn = session.beginTransaction();
 
 //			Student ob = new Student();
-//			ob.setRno(102);
-//			ob.setName("BBB");
-//			ob.setPer(98.0);
+//			ob.setRno(104);
+//			ob.setName("DDD");
+//			ob.setPer(88.0);
 //
 //			session.save(ob);
 		
-			Student s = (Student) session.get(Student.class, 102);
-			System.out.println(s.getName());
+			Student student = (Student)session.get(Student.class, 102);
 			
-			
+			System.out.println(student);
 			
 			txn.commit();
 

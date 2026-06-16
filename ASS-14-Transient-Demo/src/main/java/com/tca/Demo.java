@@ -4,15 +4,16 @@ import java.io.Serializable;
 
 class A implements Serializable
 {
-     private int i=11;
+     private static final long serialVersionUID = 1L;
+     
+	 private int i=11;
      private int j=22;
-     
-     
+         
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "A [i=" + i + ", j=" + j + "]";
 	}
- 
 }
 
 public class Demo
@@ -21,7 +22,6 @@ public class Demo
 	{	
 		A ob = new A();
 		System.out.println(ob);
-
 	}
 
 }

@@ -1,5 +1,4 @@
 package com.tca;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -19,7 +18,7 @@ public class App
     	try
     	{
     		configuration = new Configuration();             // configuration --> Data
-    		configuration.configure("hibernate.cfg.xml");    // It Loads and Parse XML Files (like Giving or taking Information about Database Properties, hibernate Properties & Mapping File )
+    		configuration.configure();    					 // It Loads and Parse XML Files (like Giving or taking Information about Database Properties, hibernate Properties & Mapping File )
 
     		sf = configuration.buildSessionFactory();        // cmd + shift + 1
 
@@ -46,7 +45,6 @@ public class App
     		session.close();
         	sf.close();
     	}
-    	 
-    
+   
     }
 }

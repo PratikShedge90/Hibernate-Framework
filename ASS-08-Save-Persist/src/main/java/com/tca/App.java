@@ -4,7 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-
 import com.tca.beans.Student;
 import com.tca.beans.Teacher;
 
@@ -31,7 +30,7 @@ public class App {
         	sf = configuration.buildSessionFactory();
         	session = sf.openSession();
         	txn = session.beginTransaction();
-        	
+ 
        //-------------------------------------------------------
         	/** This is for PostgreSQL Database Queries*/
         	

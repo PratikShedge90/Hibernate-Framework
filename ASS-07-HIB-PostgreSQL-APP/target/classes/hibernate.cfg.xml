@@ -7,6 +7,7 @@
 <hibernate-configuration>
 	<session-factory>
 
+		<!-- Database Properties -->
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
 		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/hfb02</property>
 		<property name="hibernate.connection.user">root</property>

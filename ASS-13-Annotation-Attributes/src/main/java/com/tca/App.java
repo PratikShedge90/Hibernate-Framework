@@ -16,8 +16,7 @@ public class App {
 	{
 		if(per<0 || per > 100)
 		{
-			throw new InvalidAttributesException("Percentage Should be between 0 and 100");
-			
+			throw new InvalidAttributesException("Percentage Should be between 0 and 100");	
 		}
 		
 		Student ob = new Student();

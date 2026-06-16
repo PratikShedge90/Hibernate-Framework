@@ -14,11 +14,6 @@ public class Student
     
 	private Double per;
 
-	
-	/*
-	@Transient
-	private Boolean status;
-  */
     
 	public Integer getRno() {
 		return rno;
