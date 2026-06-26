@@ -2,7 +2,6 @@ package com.tca;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import com.tca.entities.Student;
@@ -26,6 +25,8 @@ public class App {
             //reflection     	
         	Student s = (Student)session.get(Student.class, 101);  // get() method is Generic it can give object of Student, Teacher etc.
         	
+
+    		
         	System.out.println(s);
         	
          	Student s2 = (Student)session.get(Student.class, 101);

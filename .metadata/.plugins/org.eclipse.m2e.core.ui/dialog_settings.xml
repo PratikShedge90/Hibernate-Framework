@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/pratikshedge/Desktop/2025/Hibernate/ASS-54-HIB-CDAC-Practice"/>
 			<item value="/Users/pratikshedge/Desktop/2025/Hibernate"/>
 			<item value="/Users/pratikshedge/Desktop/2025/Hibernate/ASS-06-HIB-MYSQL-APP/src/main/java/com/tca/App.java"/>
 			<item value="/Users/pratikshedge/Desktop/2025/Hibernate/ASS-06-HIB-MYSQL-APP"/>
@@ -29,13 +30,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.tca"/>
 		</list>
 		<list key="groupId">
-			<item value="com.tca"/>
 		</list>
 		<list key="artifactId">
-			<item value="ASS-24-PostgreSQL-APP"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

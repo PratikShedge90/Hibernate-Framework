@@ -26,7 +26,7 @@ public class App {
         	txn = session.beginTransaction();
         	
         	Student student = new Student();
-        	student.setRno(101);
+        	student.setRno(444);
         	student.setName("Aniket");
         	student.setPer(90.0);
         	
